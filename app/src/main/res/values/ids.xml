@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tipoPrestamo_spin" type="id" />
+    <item name="tipoPrestamo_spn" type="id" />
+    <item name="contrasena_ET" type="id" />
+
+</resources>

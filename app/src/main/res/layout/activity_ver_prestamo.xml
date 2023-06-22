@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Control.agregarCliente"
+    android:background="#015C56">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/orangeF5812B"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="#015C56"
+        tools:layout_editor_absoluteX="21dp" />
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="483dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/diseno_linear_layout"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        tools:context=".Control.verPrestamo">
+
+        <TextView
+            android:id="@+id/viewTipoCredito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_tipo_credito"
+            android:textColor="#3E2723" />
+
+        <EditText
+            android:id="@+id/txtTipoCredito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:labelFor="@+id/txtTipoCredito"
+            android:textSize="24sp"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+        <TextView
+            android:id="@+id/viewMonto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_monto"
+            android:textColor="#3E2723" />
+
+        <EditText
+            android:id="@+id/txtMonto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="number"
+            android:labelFor="@+id/txtMonto"
+            android:textSize="24sp"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+        <TextView
+            android:id="@+id/viewCuota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_cuota"
+            android:textColor="#3E2723" />
+
+        <EditText
+            android:id="@+id/txtCuota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="number"
+            android:labelFor="@+id/txtCuota"
+            android:textSize="24sp"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+
+        <TextView
+            android:id="@+id/viewMontoPagado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_monto_pagado"
+            android:textColor="#3E2723" />
+
+        <EditText
+            android:id="@+id/txtMontoPagado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="number"
+            android:labelFor="@+id/txtCuota"
+            android:textSize="24sp"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnPagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F1C9A0"
+            android:text="PAGAR"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regresar_ver_prest_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/orangeF5812B"
+        android:text="@string/regresar"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
